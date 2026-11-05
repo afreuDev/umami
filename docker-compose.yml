@@ -9,6 +9,8 @@ services:
       APP_SECRET: replace-me-with-a-random-string
       # Required for two-factor authentication, generate with: openssl rand -hex 32
       TWO_FACTOR_ENCRYPTION_KEY: replace-me-with-a-64-character-hex-string
+      # Enables the remote MCP endpoint at /mcp (authenticate with an API key from Settings → API keys)
+      MCP_ENABLED: "1"
     depends_on:
       db:
         condition: service_healthy

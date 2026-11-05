@@ -10,6 +10,11 @@
       "description": "Used to generate unique values for your installation",
       "required": true,
       "generator": "secret"
+    },
+    "MCP_ENABLED": {
+      "description": "Set to 1 to enable the remote MCP endpoint at /mcp (authenticate with an API key from Settings → API keys)",
+      "value": "1",
+      "required": false
     }
   },
   "success_url": "/"
